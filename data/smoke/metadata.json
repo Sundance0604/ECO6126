@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "model_version": "v1.5-A-raw-4d85097a0e80",
+  "config": {
+    "schema_version": "1.0",
+    "N": 100,
+    "rho": [
+      0.1,
+      0.3
+    ],
+    "a": 3,
+    "p": 3,
+    "q": 3,
+    "w_init": 10.0,
+    "c": 0.0,
+    "T": 200,
+    "E": [
+      0,
+      1
+    ],
+    "B": [
+      0,
+      1
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "payoffs": {
+      "g_HH": 2.0,
+      "g_HP_H": -2.0,
+      "g_HP_P": 2.0,
+      "g_PP": -1.0
+    },
+    "wealth_ledger": "original_raw_confirmed_A",
+    "bootstrap_reps": 5000,
+    "bootstrap_seed": 20261107
+  },
+  "config_sha256": "4f37771ca2bade9e8accf3da908c177ff6dab36d70f851d17e9db90a98703646",
+  "source_sha256": {
+    "natural_consumption_HCtrading.py": "f09b26eefc5bf4c1fd6bac779ae9a0cdeae51480875f6025d66475b7e3c1a5a0",
+    "Research_Proposal_ZH.pdf": "8842e0b7c5744657267c1a71e0b4853b534d9583bba31f9019aff659a59e08e6",
+    "微信图片_2026-11-06_223646_213.jpg": "008fb44910d55802700e69b3998f99eaaac12150284a0e41c10fac5b59460b00",
+    "微信图片_2026-11-06_223651_524.jpg": "be1094e4ed5afa24199aa9aefb0228d3d0c336a6fa826f663d8ecaf02327176a",
+    "src/__init__.py": "6083553a585802d7c8847d1f850e13d98e7be532933a0f4a81502e6c61618ae6",
+    "src/market.py": "7c6ad926a612702874d2ba2ead47a19e26f3676dddb0ea0c555627a4709cea58",
+    "src/metrics.py": "1770862782c1cb80369c46ccf452b0767cbdc5bf5b97cce461049960b1b9ff90",
+    "src/provenance.py": "eca463a722e5633de530d683fa595b30bc564e08f49ff3409ef6f2b5dfe1be5b",
+    "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/run_baseline.py": "967bfcfeed8d016b907fb7668b83c755a802a8213255f36fbad74b0e36b1d59e",
+    "scripts/validate_outputs.py": "8c7ccf43449388404f0741e423163e7f1c7692537f2bec511013e16ce8a3f0c0",
+    "analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/A_baseline.py": "c8d2e38b68ce29a74eb4d5fe0320f345bb99064dcde43cfc6bb1508bd101a8dc",
+    "tests/test_analysis.py": "ba8f78a5df50e23ddf2b265627aab9eb36930ba47da2e92f7f72814a82f40951",
+    "tests/test_model.py": "a10ca1264ca80088cf90b68668c2cd8b6700e7ea81da838635fb29c64c0055bb"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "3.0.1"
+    }
+  },
+  "started_at": "2026-11-07T20:04:13.080586+08:00",
+  "smoke": true,
+  "expected_runs": 24,
+  "status": "complete",
+  "wealth_decision": "A confirmed by user: state and exit record retain raw negative values",
+  "event_time": "edge t=t_end=t_start+1; step t is end-of-round state",
+  "seed_interpretation": "shared-seed blocks, not identical per-step shocks",
+  "actual_runs": 24,
+  "finished_at": "2026-11-07T20:04:24.570349+08:00",
+  "elapsed_seconds": 11.489,
+  "output_sha256": {
+    "edge_level.csv.gz": "ec2fbf6e4cd001bede3e42112513a157a6833dbe1eb292fed483903ae247f9d9",
+    "run_level.csv": "7ed12cb98afc69a42ca663b2e7a62efa0c2ef9f01284444b1845344b6a3266f0",
+    "step_level.csv": "6128e6744a40ccf251e52567557cab4f833ef7141d486024b3f3f282704d0a85"
+  }
+}

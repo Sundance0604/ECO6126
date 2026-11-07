@@ -1,0 +1,16 @@
+{
+  "member": "F",
+  "status": "example_plan_not_a_new_research_decision",
+  "purpose": "单因素敏感性配置示例，不自动运行，不构成完整稳健性分析。",
+  "base_config": "../baseline.json",
+  "scenarios": [
+    {"name": "reference", "overrides": {}},
+    {"name": "N200", "overrides": {"N": 200}},
+    {"name": "a2", "overrides": {"a": 2}},
+    {"name": "a5", "overrides": {"a": 5}},
+    {"name": "p2", "overrides": {"p": 2}},
+    {"name": "p4", "overrides": {"p": 4}},
+    {"name": "T400", "overrides": {"T": 400}},
+    {"name": "HH1p8", "overrides": {"payoffs": {"g_HH": 1.8}}}
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "member": "D",
+  "generated_at": "2026-11-07T20:57:00.391577+08:00",
+  "stage": "inputs_only_no_fitted_analysis",
+  "sources": [
+    {
+      "folder": "data/smoke",
+      "metadata_sha256": "c7548536656dc5edffca02360487505030608d222f273ed352833628751c5857",
+      "model_version": "v1.5-A-raw-4d85097a0e80",
+      "output_sha256": {
+        "edge_level.csv.gz": "ec2fbf6e4cd001bede3e42112513a157a6833dbe1eb292fed483903ae247f9d9",
+        "run_level.csv": "7ed12cb98afc69a42ca663b2e7a62efa0c2ef9f01284444b1845344b6a3266f0",
+        "step_level.csv": "6128e6744a40ccf251e52567557cab4f833ef7141d486024b3f3f282704d0a85"
+      }
+    }
+  ],
+  "source_sha256": {
+    "natural_consumption_HCtrading.py": "f09b26eefc5bf4c1fd6bac779ae9a0cdeae51480875f6025d66475b7e3c1a5a0",
+    "Research_Proposal_ZH.pdf": "8842e0b7c5744657267c1a71e0b4853b534d9583bba31f9019aff659a59e08e6",
+    "微信图片_2026-11-06_223646_213.jpg": "008fb44910d55802700e69b3998f99eaaac12150284a0e41c10fac5b59460b00",
+    "微信图片_2026-11-06_223651_524.jpg": "be1094e4ed5afa24199aa9aefb0228d3d0c336a6fa826f663d8ecaf02327176a",
+    "src/__init__.py": "6083553a585802d7c8847d1f850e13d98e7be532933a0f4a81502e6c61618ae6",
+    "src/data_access.py": "9cd62f3ea606be502758f2e30488e136f19b74fabee7e4f7f41d6b84bec7f555",
+    "src/market.py": "7c6ad926a612702874d2ba2ead47a19e26f3676dddb0ea0c555627a4709cea58",
+    "src/metrics.py": "1770862782c1cb80369c46ccf452b0767cbdc5bf5b97cce461049960b1b9ff90",
+    "src/provenance.py": "eca463a722e5633de530d683fa595b30bc564e08f49ff3409ef6f2b5dfe1be5b",
+    "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/prepare_member.py": "137e1a17b9f0e11210e967b31eec7d1d7df85eb23dae7d2910864d4f0a33a48a",
+    "scripts/run_baseline.py": "b74c594ba8efbee4a600af290504974c3632057560a8e5334342bda2bacc544a",
+    "scripts/run_extensions.py": "09f63cdd555d761978cffc04ac1b9eba97153fbbf8605355a492e7c3d6a1a66c",
+    "scripts/validate_outputs.py": "aa53ec5dcbb59dc3ab25b303c6946c50ff4e9f295788d101fd8126078abf73d0",
+    "analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/A_baseline.py": "22b23ec4c1167ae0d64666ef33d83373c24892edbeda6e95e0514fa51592550f",
+    "tests/test_analysis.py": "1173273565fce2023afd9b4fadc51b2d3fe8e05fcb490c2037294b04ad247786",
+    "tests/test_interfaces.py": "6330f4b44eca1d199a4051fea0fae0664e1dea16231e064535ef52465c7e4353",
+    "tests/test_model.py": "048dbb5fc0912d0ffb88211de9eda7461e54ad990721f6ca66f1e7a5d8c257a0",
+    "tests/test_pipeline.py": "084b41e9251d2017d2127feca1a5b931dc7276a34c84cb231b61a3b807aa6127"
+  },
+  "output_sha256": {
+    "run_inputs.csv": "7ed12cb98afc69a42ca663b2e7a62efa0c2ef9f01284444b1845344b6a3266f0"
+  },
+  "rows": {
+    "run_inputs.csv": 24
+  },
+  "inference_block": "seed jointly across all matched configurations and institutions"
+}

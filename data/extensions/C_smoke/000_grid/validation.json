@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-07T20:58:07.579074+08:00",
+  "run_rows": 4,
+  "step_rows": 804,
+  "distinct_seeds": 2,
+  "checks": [
+    "hashes",
+    "complete factorial grid",
+    "unique run IDs",
+    "all state times",
+    "population monotonicity",
+    "exit labels",
+    "wealth/surplus conservation",
+    "event/censoring",
+    "run/step aggregation",
+    "honest-base conversion identity"
+  ],
+  "edge_rows_if_exported": null,
+  "data_sha256": {
+    "run_level.csv": "d3f90829beec00cf0589dacd0d73b67867b6a7363a5a1ef89c5ac2c6854ebd4b",
+    "step_level.csv": "0a416fb64a9bc29f77b2973d758bbbf62876b921486e14ccdcda13f7b9440343"
+  }
+}

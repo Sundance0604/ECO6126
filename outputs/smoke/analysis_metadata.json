@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-11-07T20:16:18.006865+08:00",
+  "model_version": "v1.5-A-raw-4d85097a0e80",
+  "input_metadata_sha256": "c7548536656dc5edffca02360487505030608d222f273ed352833628751c5857",
+  "input_sha256": {
+    "edge_level.csv.gz": "ec2fbf6e4cd001bede3e42112513a157a6833dbe1eb292fed483903ae247f9d9",
+    "run_level.csv": "7ed12cb98afc69a42ca663b2e7a62efa0c2ef9f01284444b1845344b6a3266f0",
+    "step_level.csv": "6128e6744a40ccf251e52567557cab4f833ef7141d486024b3f3f282704d0a85"
+  },
+  "config_sha256": "4f37771ca2bade9e8accf3da908c177ff6dab36d70f851d17e9db90a98703646",
+  "source_sha256": {
+    "natural_consumption_HCtrading.py": "f09b26eefc5bf4c1fd6bac779ae9a0cdeae51480875f6025d66475b7e3c1a5a0",
+    "Research_Proposal_ZH.pdf": "8842e0b7c5744657267c1a71e0b4853b534d9583bba31f9019aff659a59e08e6",
+    "微信图片_2026-11-06_223646_213.jpg": "008fb44910d55802700e69b3998f99eaaac12150284a0e41c10fac5b59460b00",
+    "微信图片_2026-11-06_223651_524.jpg": "be1094e4ed5afa24199aa9aefb0228d3d0c336a6fa826f663d8ecaf02327176a",
+    "src/__init__.py": "6083553a585802d7c8847d1f850e13d98e7be532933a0f4a81502e6c61618ae6",
+    "src/market.py": "7c6ad926a612702874d2ba2ead47a19e26f3676dddb0ea0c555627a4709cea58",
+    "src/metrics.py": "1770862782c1cb80369c46ccf452b0767cbdc5bf5b97cce461049960b1b9ff90",
+    "src/provenance.py": "eca463a722e5633de530d683fa595b30bc564e08f49ff3409ef6f2b5dfe1be5b",
+    "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/run_baseline.py": "3b0c47b6affc6ad37ca421c140078e41e7152449eb8ed36bdeb5a61d1fcb50fd",
+    "scripts/validate_outputs.py": "6b837aab7ca38271b914a0696f443a21a32f2f9a0fe7f1ba5c183fe504899089",
+    "analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/A_baseline.py": "22b23ec4c1167ae0d64666ef33d83373c24892edbeda6e95e0514fa51592550f",
+    "tests/test_analysis.py": "1173273565fce2023afd9b4fadc51b2d3fe8e05fcb490c2037294b04ad247786",
+    "tests/test_model.py": "048dbb5fc0912d0ffb88211de9eda7461e54ad990721f6ca66f1e7a5d8c257a0",
+    "tests/test_pipeline.py": "084b41e9251d2017d2127feca1a5b931dc7276a34c84cb231b61a3b807aa6127"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "3.0.1"
+    }
+  },
+  "bootstrap_reps": 5000,
+  "bootstrap_seed": 20261107,
+  "resampling_unit": "seed across all rho x E x B",
+  "ols_diagnostics": {
+    "rmst_T": {
+      "rank": 5,
+      "n_parameters": 5,
+      "n_rows": 24,
+      "rho_reference": 0.1,
+      "max_abs_X_residual_moment": 1.4495071809506044e-12
+    },
+    "welfare_T": {
+      "rank": 5,
+      "n_parameters": 5,
+      "n_rows": 24,
+      "rho_reference": 0.1,
+      "max_abs_X_residual_moment": 2.546585164964199e-10
+    }
+  }
+}

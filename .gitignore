@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+# Optional, potentially large edge-event outputs. Recreate with --edges.
+edge_level.csv.gz
+# Keep the small validation example: smoke metadata references this exact file.
+!data/smoke/edge_level.csv.gz
