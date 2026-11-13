@@ -1,0 +1,15 @@
+model,setting,validation_cell_MAE
+OLS interaction,0.0,41.70068154482236
+OLS quadratic,0.0,41.68784490463201
+Segmented regression,0.125,35.73738745222008
+Segmented regression,0.175,38.91656885490002
+Segmented regression,0.225,41.60381356599372
+Segmented regression,0.275,37.788752820548915
+Segmented regression,0.325,33.21767888521648
+Random Forest,5.0,3.636013359579738
+Random Forest,20.0,3.637145582123259
+Random Forest,40.0,4.069716814596883
+Gradient Boosting,7.0,3.848408967924564
+Gradient Boosting,15.0,3.5918180685272847
+R-learner,7.0,3.863925315918883
+R-learner,15.0,3.594719389060422

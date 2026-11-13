@@ -1,0 +1,28 @@
+{
+  "task_a_commit": "d30d156a1343a8261e83ff000e9fb13fe050445d",
+  "model_version": "v1.5-A-raw-4d85097a0e80",
+  "task_a_run_level_sha256": "82a3ac13ec1913a25aa86d92944287be6870a712616f88d5cbfe772f25b69cc9",
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 10:14:12) [Clang 14.0.6 ]",
+  "numpy": "1.26.4",
+  "pandas": "2.2.2",
+  "scikit_learn": "1.4.2",
+  "matplotlib": "3.8.4",
+  "sha256": {
+    "src/market.py": "7c6ad926a612702874d2ba2ead47a19e26f3676dddb0ea0c555627a4709cea58",
+    "natural_consumption_HCtrading.py": "f09b26eefc5bf4c1fd6bac779ae9a0cdeae51480875f6025d66475b7e3c1a5a0",
+    "configs/baseline.json": "59630e8e259a2fa2586cff6d22f2eeb6725cbd806e72d26196dc80af52e0dec7",
+    "data/extensions/D/ml_dense_rho_p.csv": "0bc8931d2089e96c19e69dd777d39b674abadf16c11c034b8812bd37634bc5b2",
+    "data/extensions/D/task_a_reference.csv": "7d06e49705f92d74f37603969f65559cc54f8f253e0828f808c11e82d7d9afd8",
+    "analysis/D_heterogeneity.py": "524445b4bf08da03a7ea17b3ab6d09a7b12029bb25b5deef62a76216fab43a79",
+    "analysis/D_verify.py": "f812cbb8c68f20ee5bd55768dc0093bd5c6e5dfdce6f35c5e20b6bc96ff78abd",
+    "analysis/requirements-D.txt": "8b614a9934f243410a358d94eb5f2aedbbe3993cf74466c1e0fe7ef0b8608df0"
+  },
+  "checks": {
+    "full_d_rerun_rows": 17280,
+    "previous_D_outcome_mismatches": 0,
+    "task_a_overlap_rows": 800,
+    "task_a_overlap_outcome_mismatches": 0,
+    "previous_D_metrics_match": true
+  },
+  "original_delivery_ml_script_sha256": "23a181ccf43cd3f91cd16b36b02b88fb18b8b4c5c99d40cb79e88b94f81b0d15"
+}
