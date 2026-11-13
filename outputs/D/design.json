@@ -1,0 +1,44 @@
+{
+  "primary_model": "Gradient Boosting",
+  "runs": 17280,
+  "configurations": 108,
+  "train_runs": 8352,
+  "validation_runs": 2784,
+  "test_runs": {
+    "New seeds": 2784,
+    "Unseen configurations": 672
+  },
+  "train_seeds": [
+    1,
+    48
+  ],
+  "validation_seeds": [
+    49,
+    64
+  ],
+  "test_seeds": [
+    65,
+    80
+  ],
+  "held_rho": [
+    0.08,
+    0.13,
+    0.18,
+    0.23,
+    0.28,
+    0.33,
+    0.38
+  ],
+  "test_bootstrap": "Seed bootstrap SD and percentile distribution of fixed-model errors; excludes training uncertainty, not confidence intervals",
+  "features": [
+    "rho",
+    "p"
+  ],
+  "task_a_commit": "d30d156a1343a8261e83ff000e9fb13fe050445d",
+  "model_version": "v1.5-A-raw-4d85097a0e80",
+  "B": 1,
+  "q": 3,
+  "c": 0.0,
+  "T": 200,
+  "outcome": "Task A rmst_T, stored as surv"
+}
