@@ -1,0 +1,17 @@
+outcome,threshold,share_best
+rmst_T,q=1,1.0
+rmst_T,q=2,0.0
+rmst_T,q=3,0.0
+rmst_T,q=4,0.0
+rmst_T,q=5,0.0
+rmst_T,q=6,0.0
+rmst_T,q=8,0.0
+rmst_T,q=10,0.0
+welfare_T,q=1,1.0
+welfare_T,q=2,0.0
+welfare_T,q=3,0.0
+welfare_T,q=4,0.0
+welfare_T,q=5,0.0
+welfare_T,q=6,0.0
+welfare_T,q=8,0.0
+welfare_T,q=10,0.0

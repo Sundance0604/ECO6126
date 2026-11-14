@@ -1,0 +1,83 @@
+{
+  "task": "C — expulsion threshold response",
+  "generated_at": "2026-11-15T00:58:20+08:00",
+  "model_version": "v1.5-A-raw-4d85097a0e80",
+  "input_file": "data/processed/q_grid_run_level.csv",
+  "input_sha256": "09d7afc3bff278704178c6ddb27c7731e859587455b98a088a15c8da9306f71d",
+  "source": "scripts/run_extensions.py --plan configs/experiments/C_thresholds.json",
+  "design": {
+    "q": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10
+    ],
+    "rho": [
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.4
+    ],
+    "seeds": "0-99",
+    "E": 1,
+    "B": 1,
+    "N": 100,
+    "a": 3,
+    "p": 3,
+    "T": 200,
+    "w_init": 10.0
+  },
+  "n_runs": 4000,
+  "checks": {
+    "n_rows": 4000,
+    "n_thresholds": 8,
+    "grid": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10
+    ],
+    "n_rho": 5,
+    "n_seeds": 100,
+    "balanced": true,
+    "single_institution": true,
+    "duplicate_keys": 0,
+    "event_rate": 0.60325,
+    "n_events": 2413,
+    "n_censored": 1587
+  },
+  "joint_test_vs_q1": {
+    "rmst_T": {
+      "wald": 7898.213530491041,
+      "df": 7,
+      "p": 0.0
+    },
+    "welfare_T": {
+      "wald": 8667.99199718223,
+      "df": 7,
+      "p": 0.0
+    }
+  },
+  "inference": {
+    "bootstrap": "seed-block, 2,000 draws",
+    "boot_seed": 20261111,
+    "cluster": "random seed",
+    "multiple_testing": "Romano-Wolf step-down"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "runtime_seconds": 1.7
+}

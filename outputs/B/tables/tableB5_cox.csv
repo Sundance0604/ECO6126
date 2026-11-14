@@ -1,0 +1,16 @@
+model,estimator,term,beta,HR,se,ci_low,ci_high,p,events,n,status
+rho=0.05,Cox (unpenalised),E,,,,,,,100,200,not identified: every event falls in E=0 at shared risk sets
+rho=0.05,Cox (Firth),E,-6.96934204506289,0.0009402713585393548,1.4719613085313588,7.358667209857282e-06,0.0068954514662775655,2.1934493514614754e-06,100,200,penalised estimate; risk sets are 50/50 at every event time
+rho=0.1,Cox (unpenalised),E,,,,,,,100,200,not identified: every event falls in E=0 at shared risk sets
+rho=0.1,Cox (Firth),E,-6.9693420451637875,0.0009402713584444833,1.471961308601789,7.358667209858955e-06,0.0068954514662772715,2.193449353170156e-06,100,200,penalised estimate; risk sets are 50/50 at every event time
+rho=0.2,Cox (unpenalised),E,,,,,,,130,200,not identified: every event falls in E=0 at shared risk sets
+rho=0.2,Cox (Firth),E,-6.969342044944046,0.0009402713586510999,1.4719613084484113,7.358667209858903e-06,0.0068954514662776635,2.1934493494492263e-06,130,200,penalised estimate; risk sets are 50/50 at every event time
+rho=0.3,Cox (unpenalised),E,,,,,,,200,200,not identified: every event falls in E=0 at shared risk sets
+rho=0.3,Cox (Firth),E,-6.96934204579155,0.000940271357854216,1.471961309039983,7.358667209837152e-06,0.006895451466276671,2.193449363800904e-06,200,200,penalised estimate; risk sets are 50/50 at every event time
+rho=0.4,Cox (unpenalised),E,-1.5516835653847212,0.2118909411133208,0.9555021341301573,0.032567730740303155,1.3785968474102794,0.10438740165266179,200,200,identified
+rho=0.4,Cox (Firth),E,-1.551995506649056,0.21182485389345018,0.1583509972842939,0.15539303316530037,0.2889847170005725,1.1149473762103427e-22,200,200,penalised estimate; risk sets are 50/50 at every event time
+pooled (rho strata),Cox (unpenalised),E,-3.0682357014363166,0.046503127925490405,0.875470373992099,0.008361427574258692,0.2586329771619475,0.00045717172737006384,730,1000,identification driven by rho=0.40 (see fragility row)
+pooled (rho strata),Cox (Firth),E,-3.064634030659719,0.04667091886483902,0.11891201642140456,0.036797555645029276,0.058651223762350074,1.814066043936286e-146,730,1000,penalised
+pooled + B,Cox (unpenalised),E,-3.0682357014363193,0.04650312792549028,0.8754703739921009,,,,730,1000,unchanged by adding B
+pooled + B,Cox (unpenalised),B,0.0,1.0,0.0,,,,730,1000,B carries zero information (se = 0)
+"pooled, rho<0.40",Cox (unpenalised),E,,,,,,,530,800,fragility check: estimate no longer exists without rho=0.40

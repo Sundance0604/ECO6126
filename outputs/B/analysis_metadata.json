@@ -1,0 +1,72 @@
+{
+  "task": "B 鈥?survival analysis of market collapse",
+  "generated_at": "2026-11-15T00:57:51+08:00",
+  "model_version": "v1.5-A-raw-4d85097a0e80",
+  "input_file": "data/processed/run_level.csv",
+  "input_sha256": "82a3ac13ec1913a25aa86d92944287be6870a712616f88d5cbfe772f25b69cc9",
+  "input_source": "github.com/Sundance0604/ECO6126 @ data/processed/run_level.csv",
+  "n_rows": 2000,
+  "design": {
+    "rho": [
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.4
+    ],
+    "E": [
+      0,
+      1
+    ],
+    "B": [
+      0,
+      1
+    ],
+    "seeds": "0-99",
+    "T": 200,
+    "N": 100,
+    "a": 3,
+    "p": 3,
+    "q": 3,
+    "w_init": 10.0
+  },
+  "estimands": {
+    "duration": "rmst_T = min(T_collapse, 200)",
+    "event": "collapse_event (1 = 10*H_active <= H0 observed within T)",
+    "primary": "RMST(200) difference, E=1 minus E=0, paired within seed"
+  },
+  "inference": {
+    "bootstrap": "seed-block, whole 100-seed blocks",
+    "n_boot": 5000,
+    "boot_seed": 20261110,
+    "cox_variance": "cluster-robust by seed"
+  },
+  "validation": {
+    "n_rows": 2000,
+    "balanced_cells": true,
+    "n_seeds": 100,
+    "duplicate_keys": 0,
+    "event_rate": 0.73,
+    "bankruptcy_inert": true,
+    "censoring_consistent": true,
+    "n_censored": 540,
+    "n_events": 1460
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "runtime_seconds": 25.2,
+  "outputs": [
+    "tableB1_km_summary.csv",
+    "tableB2_rmst_levels.csv",
+    "tableB3_rmst_differences.csv",
+    "tableB4_logrank.csv",
+    "tableB5_cox.csv",
+    "tableB6_hazard_profile.csv",
+    "tableB7_ph_diagnostics.csv",
+    "Figure1.png"
+  ]
+}

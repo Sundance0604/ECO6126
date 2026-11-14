@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "member": "C",
+  "status": "complete",
+  "smoke": false,
+  "started_at": "2026-11-11T00:24:31.947990+08:00",
+  "plan_sha256": "35f01c9ac248e480d1db9eff6945178c56f91cd883b3951003b9c9f61e88b9ba",
+  "plan": {
+    "member": "C",
+    "status": "example_plan_not_a_new_research_decision",
+    "purpose": "阈值响应示例；不预设内点最优。示例固定B=1，负责人可改common.B后再执行。",
+    "base_config": "../baseline.json",
+    "common": {
+      "E": [
+        1
+      ],
+      "B": [
+        1
+      ]
+    },
+    "grid": {
+      "q": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+      ]
+    }
+  },
+  "batches": [
+    {
+      "path": "000_grid",
+      "runs": 500,
+      "metadata_sha256": "3dcf7daa25bb2697c8100fc4fc31b9e1e0146fc27ecb94e083e4b11d8854c018"
+    },
+    {
+      "path": "001_grid",
+      "runs": 500,
+      "metadata_sha256": "a5225b5a920a69ba4cf753fdbcc7147374532089b2b982b503687f56b908ef80"
+    },
+    {
+      "path": "002_grid",
+      "runs": 500,
+      "metadata_sha256": "72b3fe9720f89c8a1c5e4e0bc62df177642abc7d68fa028988402ce51f484f17"
+    },
+    {
+      "path": "003_grid",
+      "runs": 500,
+      "metadata_sha256": "6cc18f7a9826ecbe8e5363bc830427ec4718e1e2d690389c28a0372341f760ec"
+    },
+    {
+      "path": "004_grid",
+      "runs": 500,
+      "metadata_sha256": "6ab8c9669c42ca21354472c23a1e3271ff8861e0b7c796f75b6b3136b3fef350"
+    },
+    {
+      "path": "005_grid",
+      "runs": 500,
+      "metadata_sha256": "0098d9ec5cd32a133a77ea612728c740340a34ef1994f31cd6a64bdc9cc4117b"
+    },
+    {
+      "path": "006_grid",
+      "runs": 500,
+      "metadata_sha256": "206b06cc635c5c18891b799134b949ad566f610f03ba55b4c97bdac8d44ffd4b"
+    },
+    {
+      "path": "007_grid",
+      "runs": 500,
+      "metadata_sha256": "e775aa9993708896ab106cc9e605ef49cb47ebb2aa82710becac9adc6192e686"
+    }
+  ],
+  "expected_runs": 4000,
+  "finished_at": "2026-11-11T00:29:57.672552+08:00"
+}
