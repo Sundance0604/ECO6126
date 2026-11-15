@@ -1,0 +1,9 @@
+parameter,value,note
+thresholds,"1, 2, 3, 4, 5, 6, 8, 10",Eight integer policy rules
+initial_cheater_share,"0.05, 0.10, 0.20, 0.30, 0.40",Five market types
+random_seeds,100,Shared across all thresholds
+market_size_N,100,Held fixed
+trade_limit_a,3,Held fixed
+conversion_threshold_p,3,Held fixed
+horizon_T,200,Held fixed
+bankruptcy_switch,on,Reproduces the baseline configuration

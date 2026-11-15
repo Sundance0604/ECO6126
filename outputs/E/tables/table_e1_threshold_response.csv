@@ -1,0 +1,9 @@
+q,survival_effect_periods,welfare_effect_surplus_units,interval_summary,romano_wolf_p
+1,0.0,0.0,Reference,Reference
+2,-31.4,-12710.0,excludes zero,<0.001
+3,-49.9,,excludes zero,<0.001
+4,-85.9,,excludes zero,<0.001
+5,-90.5,,excludes zero,<0.001
+6,-105.1,,excludes zero,<0.001
+8,-117.9,,excludes zero,<0.001
+10,-140.3,-71058.0,excludes zero,<0.001
