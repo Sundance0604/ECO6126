@@ -1,0 +1,9 @@
+Specification,Fraud,Conversion,Cooperation,N
+Main specification (Table 7.4),-456.088*** (71.882),-0.768*** (0.170),40124.126*** (8983.623),1440
+Configuration (rho x p) fixed effects,-456.088*** (53.254),-0.768*** (0.122),40124.126*** (6373.299),1440
+Clustered on seed (common random numbers),-456.088*** (1.278),-0.768*** (0.002),40124.126*** (88.113),1440
+Clustered on config x seed block,-456.088*** (13.572),-0.768*** (0.031),40124.126*** (1619.985),1440
+Trading capacity a = 2 (seed clusters),-420.958*** (1.830),-0.831*** (0.001),28623.992*** (48.233),80
+Trading capacity a = 4 (seed clusters),-485.900*** (2.970),-0.840*** (0.002),57851.825*** (119.609),80
+Per-trade composition outcomes,-0.116*** (0.033),n.a.,0.493*** (0.090),1440
+"Conversion truncated to [0.02, 0.98]",-456.088*** (71.882),-0.737*** (0.165),40124.126*** (8983.623),1440

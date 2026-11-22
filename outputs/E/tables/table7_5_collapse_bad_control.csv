@@ -1,0 +1,4 @@
+Specification,E_coefficient,CI_95,Fraud,Conversion,Cooperation,R2,N
+(1) Baseline,140.859 (33.018),"[70.005, 203.799]",-,-,-,0.7666,1440
+(2) + post-treatment outcomes,3.288 (3.639),"[-7.374, 12.729]",119.067,-176.442,1.405,0.9967,1440
+"(3) + outcomes, config FE",4.244 (2.018),"[-35.357, 10.329]",113.546,-173.292,1.379,0.9982,1440

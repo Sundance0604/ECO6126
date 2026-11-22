@@ -1,0 +1,1255 @@
+{
+  "key_numbers": {
+    "n_main": 1440,
+    "n_total": 1840,
+    "n_clusters": 48,
+    "n_seeds": 30,
+    "beta_fraud": -456.088095,
+    "se_fraud": 71.882197,
+    "ci_fraud": [
+      -613.019608,
+      -293.784324
+    ],
+    "beta_conv": -0.767849,
+    "se_conv": 0.169807,
+    "ci_conv": [
+      -1.125955,
+      -0.377162
+    ],
+    "beta_coop": 40124.12619,
+    "se_coop": 8983.623225,
+    "ci_coop": [
+      20983.962792,
+      57256.484219
+    ],
+    "inter_fraud": 1728.558201,
+    "inter_conv": 2.866462,
+    "inter_coop": -147454.542328,
+    "r2_fraud": 0.8342,
+    "r2_conv": 0.7624,
+    "r2_coop": 0.795,
+    "beta_fraud_share": -0.115577,
+    "beta_coop_share": 0.49306,
+    "base_beta": 140.8589,
+    "naive_beta": 3.2881,
+    "base_ci": [
+      70.0051,
+      203.7994
+    ],
+    "naive_ci": [
+      -7.3742,
+      12.7292
+    ],
+    "apparent_share": 0.9766567820705686,
+    "surv0": 6.622222222222222,
+    "surv1": 90.23472222222222,
+    "fraud0": 553.9541666666667,
+    "fraud1": 295.18888888888887,
+    "conv0": 0.9845652694444443,
+    "conv1": 0.574033125,
+    "coop0": 812.2013888888889,
+    "coop1": 22038.66388888889,
+    "wt0": -3827.7479166666667,
+    "wt1": 64693.06319444445,
+    "wthh0": 2436.6041666666665,
+    "wthh1": 66115.99166666667,
+    "wtcc0": -6710.855555555556,
+    "wtcc1": -1544.3722222222223,
+    "endw0": 172.25208333333333,
+    "endw1": 68693.06319444445,
+    "acct_gap": 0.0,
+    "cost_c30_wt0": -3239.8025000000002,
+    "cost_c30_wt1": 80456.9025,
+    "cost_c30_adj1": 74861.31,
+    "cost_c30_costdeath1": 2.075,
+    "cost_c30_tradedeath1": 33.375,
+    "cost_c0_evicted1": 74.8,
+    "cost_c0_bank1": 34.35,
+    "cost_c0_both1": 0.0,
+    "cost_c0_alive1": 165.65,
+    "cost_c0_death1": 34.35
+  },
+  "tables": {
+    "t71": [
+      {
+        "Parameter": "Market size",
+        "Symbol": "N",
+        "Value": "200",
+        "Role": "Closed population, no entry"
+      },
+      {
+        "Parameter": "Initial honest / cheaters",
+        "Symbol": "H0 / C0",
+        "Value": "N(1-rho) / N*rho",
+        "Role": "rho on 0.05-0.40 grid"
+      },
+      {
+        "Parameter": "Initial wealth",
+        "Symbol": "w0",
+        "Value": "20",
+        "Role": "Identical for every agent"
+      },
+      {
+        "Parameter": "Observation window",
+        "Symbol": "T",
+        "Value": "200",
+        "Role": "Fixed horizon, right censoring"
+      },
+      {
+        "Parameter": "Counterparties per step",
+        "Symbol": "a",
+        "Value": "3",
+        "Role": "Robustness: 2, 4"
+      },
+      {
+        "Parameter": "H-H one-sided payoff",
+        "Symbol": "g_HH",
+        "Value": "+1.5",
+        "Role": "2 g_HH = +3 per trade"
+      },
+      {
+        "Parameter": "C-C one-sided payoff",
+        "Symbol": "g_CC",
+        "Value": "-2.0",
+        "Role": "2 g_CC = -4 per trade"
+      },
+      {
+        "Parameter": "H-C transfer",
+        "Symbol": "x",
+        "Value": "5.0",
+        "Role": "Pure transfer, sum = 0"
+      },
+      {
+        "Parameter": "Conversion threshold",
+        "Symbol": "p",
+        "Value": "2, 3, 4",
+        "Role": "Victimisations before H becomes C"
+      },
+      {
+        "Parameter": "Eviction threshold",
+        "Symbol": "q",
+        "Value": "3",
+        "Role": "Reports before expulsion"
+      },
+      {
+        "Parameter": "Survival cost",
+        "Symbol": "c",
+        "Value": "0 (main); 0.10, 0.30",
+        "Role": "Per active agent per step"
+      },
+      {
+        "Parameter": "Expulsion switch",
+        "Symbol": "E",
+        "Value": "0, 1",
+        "Role": "Institutional treatment"
+      },
+      {
+        "Parameter": "Bankruptcy",
+        "Symbol": "w <= 0",
+        "Value": "always on",
+        "Role": "Wealth zeroed, agent exits"
+      },
+      {
+        "Parameter": "Seeds per cell",
+        "Symbol": "S",
+        "Value": "30 (main), 20 (subsamples)",
+        "Role": "Common random numbers"
+      }
+    ],
+    "t72": [
+      {
+        "Block": "Macro",
+        "Variable": "Active agents",
+        "Definition": "Number of agents still participating in the market"
+      },
+      {
+        "Block": "Macro",
+        "Variable": "Active honest / cheaters",
+        "Definition": "Active agents split by current identity"
+      },
+      {
+        "Block": "Macro",
+        "Variable": "Active wealth",
+        "Definition": "Sum of wealth held by active agents"
+      },
+      {
+        "Block": "Macro",
+        "Variable": "Evicted-label wealth",
+        "Definition": "Wealth retained at exit by agents carrying the eviction label"
+      },
+      {
+        "Block": "Macro",
+        "Variable": "Cumulative conversions",
+        "Definition": "Honest agents crossing m >= p"
+      },
+      {
+        "Block": "Macro",
+        "Variable": "Cumulative bankruptcy / eviction / both",
+        "Definition": "Exit labels; both records simultaneous triggers"
+      },
+      {
+        "Block": "Macro",
+        "Variable": "Cumulative exits",
+        "Definition": "Agents leaving the market under any label"
+      },
+      {
+        "Block": "Macro",
+        "Variable": "Trade edges in step",
+        "Definition": "Distinct pairs settled in the current step"
+      },
+      {
+        "Block": "Macro",
+        "Variable": "Surviving agents",
+        "Definition": "Agents with positive wealth (alive flag)"
+      },
+      {
+        "Block": "Macro",
+        "Variable": "Cumulative deaths",
+        "Definition": "Agents whose wealth reached zero"
+      },
+      {
+        "Block": "Macro",
+        "Variable": "Trade / cost deaths",
+        "Definition": "Deaths caused by trading losses / by the survival cost"
+      },
+      {
+        "Block": "Individual",
+        "Variable": "Identity",
+        "Definition": "Honest (H) or cheater (C) at the end of the step"
+      },
+      {
+        "Block": "Individual",
+        "Variable": "Current wealth",
+        "Definition": "Balance after step-end settlement"
+      },
+      {
+        "Block": "Individual",
+        "Variable": "Cumulative victimisation m",
+        "Definition": "Number of fraudulent encounters"
+      },
+      {
+        "Block": "Individual",
+        "Variable": "Report count r",
+        "Definition": "Reports accumulated by a cheater"
+      },
+      {
+        "Block": "Individual",
+        "Variable": "Blacklist size",
+        "Definition": "Number of counterparties blacklisted by the agent"
+      },
+      {
+        "Block": "Individual",
+        "Variable": "Blacklisted-by count",
+        "Definition": "Number of agents blacklisting this agent"
+      },
+      {
+        "Block": "Individual",
+        "Variable": "First-exit wealth snapshot",
+        "Definition": "Wealth recorded at the first exit"
+      },
+      {
+        "Block": "Individual",
+        "Variable": "First-exit time",
+        "Definition": "Step of the first exit"
+      },
+      {
+        "Block": "Individual",
+        "Variable": "Death time",
+        "Definition": "Step in which wealth reached zero"
+      },
+      {
+        "Block": "Individual",
+        "Variable": "Death cause",
+        "Definition": "-1 none, 0 trade death, 1 cost death"
+      },
+      {
+        "Block": "Activity",
+        "Variable": "Active flag",
+        "Definition": "1 while participating, 0 after exit"
+      },
+      {
+        "Block": "Activity",
+        "Variable": "Bankruptcy flag",
+        "Definition": "1 if wealth was exhausted"
+      },
+      {
+        "Block": "Activity",
+        "Variable": "Eviction flag",
+        "Definition": "1 if r reached q under E = 1"
+      },
+      {
+        "Block": "Activity",
+        "Variable": "Both flag",
+        "Definition": "1 if bankruptcy and eviction triggered together"
+      },
+      {
+        "Block": "Activity",
+        "Variable": "Alive flag",
+        "Definition": "1 while wealth is positive; exit need not imply death"
+      }
+    ],
+    "t73": [
+      {
+        "Variable": "Restricted survival steps",
+        "E0_mean": 6.622,
+        "E0_sd": 2.921,
+        "E1_mean": 90.235,
+        "E1_sd": 95.818,
+        "Difference": 83.612
+      },
+      {
+        "Variable": "Collapse observed (0/1)",
+        "E0_mean": 1.0,
+        "E0_sd": 0.0,
+        "E1_mean": 0.568,
+        "E1_sd": 0.496,
+        "Difference": -0.432
+      },
+      {
+        "Variable": "Fraudulent trades (H-C)",
+        "E0_mean": 553.954,
+        "E0_sd": 147.358,
+        "E1_mean": 295.189,
+        "E1_sd": 175.523,
+        "Difference": -258.765
+      },
+      {
+        "Variable": "Cooperative trades (H-H)",
+        "E0_mean": 812.201,
+        "E0_sd": 751.495,
+        "E1_mean": 22038.664,
+        "E1_sd": 24832.933,
+        "Difference": 21226.462
+      },
+      {
+        "Variable": "Cheater-cheater trades (C-C)",
+        "E0_mean": 1677.714,
+        "E0_sd": 490.531,
+        "E1_mean": 386.093,
+        "E1_sd": 358.395,
+        "Difference": -1291.621
+      },
+      {
+        "Variable": "All traded edges",
+        "E0_mean": 3043.869,
+        "E0_sd": 1353.703,
+        "E1_mean": 22719.946,
+        "E1_sd": 24346.482,
+        "Difference": 19676.076
+      },
+      {
+        "Variable": "Conversion share of H0",
+        "E0_mean": 0.985,
+        "E0_sd": 0.037,
+        "E1_mean": 0.574,
+        "E1_sd": 0.484,
+        "Difference": -0.411
+      },
+      {
+        "Variable": "Converted honest agents",
+        "E0_mean": 153.026,
+        "E0_sd": 25.528,
+        "E1_mean": 81.869,
+        "E1_sd": 70.373,
+        "Difference": -71.157
+      },
+      {
+        "Variable": "Active agents at T",
+        "E0_mean": 8.286,
+        "E0_sd": 6.002,
+        "E1_mean": 73.785,
+        "E1_sd": 83.705,
+        "Difference": 65.499
+      },
+      {
+        "Variable": "Active honest at T",
+        "E0_mean": 0.0,
+        "E0_sd": 0.0,
+        "E1_mean": 72.781,
+        "E1_sd": 84.553,
+        "Difference": 72.781
+      },
+      {
+        "Variable": "Active cheaters at T",
+        "E0_mean": 8.286,
+        "E0_sd": 6.002,
+        "E1_mean": 1.004,
+        "E1_sd": 1.919,
+        "Difference": -7.282
+      },
+      {
+        "Variable": "Wealth of active agents",
+        "E0_mean": 172.252,
+        "E0_sd": 295.771,
+        "E1_mean": 66177.608,
+        "E1_sd": 76948.493,
+        "Difference": 66005.356
+      },
+      {
+        "Variable": "Wealth of evicted-label agents",
+        "E0_mean": 0.0,
+        "E0_sd": 0.0,
+        "E1_mean": 2515.455,
+        "E1_sd": 1618.968,
+        "Difference": 2515.455
+      },
+      {
+        "Variable": "Bankruptcy labels",
+        "E0_mean": 191.714,
+        "E0_sd": 6.002,
+        "E1_mean": 52.601,
+        "E1_sd": 49.688,
+        "Difference": -139.113
+      },
+      {
+        "Variable": "Eviction labels",
+        "E0_mean": 0.0,
+        "E0_sd": 0.0,
+        "E1_mean": 73.614,
+        "E1_sd": 43.161,
+        "Difference": 73.614
+      },
+      {
+        "Variable": "Both labels",
+        "E0_mean": 0.0,
+        "E0_sd": 0.0,
+        "E1_mean": 0.0,
+        "E1_sd": 0.0,
+        "Difference": 0.0
+      },
+      {
+        "Variable": "All exits",
+        "E0_mean": 191.714,
+        "E0_sd": 6.002,
+        "E1_mean": 126.215,
+        "E1_sd": 83.705,
+        "Difference": -65.499
+      },
+      {
+        "Variable": "Deaths",
+        "E0_mean": 191.714,
+        "E0_sd": 6.002,
+        "E1_mean": 52.601,
+        "E1_sd": 49.688,
+        "Difference": -139.113
+      },
+      {
+        "Variable": "Trade deaths",
+        "E0_mean": 191.714,
+        "E0_sd": 6.002,
+        "E1_mean": 52.601,
+        "E1_sd": 49.688,
+        "Difference": -139.113
+      },
+      {
+        "Variable": "Cost deaths",
+        "E0_mean": 0.0,
+        "E0_sd": 0.0,
+        "E1_mean": 0.0,
+        "E1_sd": 0.0,
+        "Difference": 0.0
+      },
+      {
+        "Variable": "Surviving agents",
+        "E0_mean": 8.286,
+        "E0_sd": 6.002,
+        "E1_mean": 147.399,
+        "E1_sd": 49.688,
+        "Difference": 139.113
+      },
+      {
+        "Variable": "Cumulative net benefit W_T",
+        "E0_mean": -3827.748,
+        "E0_sd": 295.771,
+        "E1_mean": 64693.063,
+        "E1_sd": 75686.633,
+        "Difference": 68520.811
+      },
+      {
+        "Variable": "End-period total wealth",
+        "E0_mean": 172.252,
+        "E0_sd": 295.771,
+        "E1_mean": 68693.063,
+        "E1_sd": 75686.633,
+        "Difference": 68520.811
+      },
+      {
+        "Variable": "Resource-adjusted W_T",
+        "E0_mean": -3827.748,
+        "E0_sd": 295.771,
+        "E1_mean": 64693.063,
+        "E1_sd": 75686.633,
+        "Difference": 68520.811
+      }
+    ],
+    "t74": [
+      {
+        "Variable": "Constant",
+        "Fraud": "545.243*** (13.088)",
+        "Conversion": "1.036*** (0.015)",
+        "Cooperation": "1602.229*** (222.912)"
+      },
+      {
+        "Variable": "E (expulsion)",
+        "Fraud": "-456.088*** (71.882)",
+        "Conversion": "-0.768*** (0.170)",
+        "Cooperation": "40124.126*** (8983.623)"
+      },
+      {
+        "Variable": "rho",
+        "Fraud": "-646.786*** (43.977)",
+        "Conversion": "-0.160*** (0.060)",
+        "Cooperation": "-4992.071*** (952.783)"
+      },
+      {
+        "Variable": "p = 3",
+        "Fraud": "154.933*** (8.087)",
+        "Conversion": "-0.007 (0.008)",
+        "Cooperation": "315.404** (146.485)"
+      },
+      {
+        "Variable": "p = 4",
+        "Fraud": "307.779*** (11.476)",
+        "Conversion": "-0.040*** (0.015)",
+        "Cooperation": "684.163*** (224.256)"
+      },
+      {
+        "Variable": "E x rho",
+        "Fraud": "1728.558*** (219.861)",
+        "Conversion": "2.866*** (0.480)",
+        "Cooperation": "-147454.542*** (23909.901)"
+      },
+      {
+        "Variable": "E x p = 3",
+        "Fraud": "-174.988*** (62.986)",
+        "Conversion": "-0.289** (0.131)",
+        "Cooperation": "14718.638** (6961.207)"
+      },
+      {
+        "Variable": "E x p = 4",
+        "Fraud": "-399.821*** (60.175)",
+        "Conversion": "-0.574*** (0.140)",
+        "Cooperation": "28120.188*** (6676.135)"
+      },
+      {
+        "Variable": "95% CI for E (cluster bootstrap)",
+        "Fraud": "[-613.020, -293.784]",
+        "Conversion": "[-1.126, -0.377]",
+        "Cooperation": "[20983.963, 57256.484]"
+      },
+      {
+        "Variable": "Observations",
+        "Fraud": 1440,
+        "Conversion": 1440,
+        "Cooperation": 1440
+      },
+      {
+        "Variable": "R-squared",
+        "Fraud": 0.8342,
+        "Conversion": 0.7624,
+        "Cooperation": 0.795
+      },
+      {
+        "Variable": "Clusters (rho x p x E cell)",
+        "Fraud": 48,
+        "Conversion": 48,
+        "Cooperation": 48
+      }
+    ],
+    "t75": [
+      {
+        "Specification": "(1) Baseline",
+        "E_coefficient": "140.859 (33.018)",
+        "CI_95": "[70.005, 203.799]",
+        "Fraud": "-",
+        "Conversion": "-",
+        "Cooperation": "-",
+        "R2": 0.7666,
+        "N": 1440
+      },
+      {
+        "Specification": "(2) + post-treatment outcomes",
+        "E_coefficient": "3.288 (3.639)",
+        "CI_95": "[-7.374, 12.729]",
+        "Fraud": "119.067",
+        "Conversion": "-176.442",
+        "Cooperation": "1.405",
+        "R2": 0.9967,
+        "N": 1440
+      },
+      {
+        "Specification": "(3) + outcomes, config FE",
+        "E_coefficient": "4.244 (2.018)",
+        "CI_95": "[-35.357, 10.329]",
+        "Fraud": "113.546",
+        "Conversion": "-173.292",
+        "Cooperation": "1.379",
+        "R2": 0.9982,
+        "N": 1440
+      }
+    ],
+    "t76": [
+      {
+        "Outcome": "W_T, realised social net benefit",
+        "E0": -3827.748,
+        "E1": 64693.063,
+        "Difference": 68520.811
+      },
+      {
+        "Outcome": "W_T, theoretical (no truncation)",
+        "E0": -4274.251,
+        "E1": 64571.619,
+        "Difference": 68845.871
+      },
+      {
+        "Outcome": "Theoretical minus realised",
+        "E0": -446.503,
+        "E1": -121.444,
+        "Difference": 325.06
+      },
+      {
+        "Outcome": "Contribution of H-H trades",
+        "E0": 2436.604,
+        "E1": 66115.992,
+        "Difference": 63679.388
+      },
+      {
+        "Outcome": "Contribution of C-C trades",
+        "E0": -6710.856,
+        "E1": -1544.372,
+        "Difference": 5166.483
+      },
+      {
+        "Outcome": "Contribution of H-C trades",
+        "E0": 0.0,
+        "E1": 0.0,
+        "Difference": 0.0
+      },
+      {
+        "Outcome": "Cooperative trade volume (trades)",
+        "E0": 812.201,
+        "E1": 22038.664,
+        "Difference": 21226.462
+      },
+      {
+        "Outcome": "Cooperative traded value (2 g_HH x trades)",
+        "E0": 2436.604,
+        "E1": 66115.992,
+        "Difference": 63679.388
+      },
+      {
+        "Outcome": "Fraudulent trades",
+        "E0": 553.954,
+        "E1": 295.189,
+        "Difference": -258.765
+      },
+      {
+        "Outcome": "Cheater-cheater trades",
+        "E0": 1677.714,
+        "E1": 386.093,
+        "Difference": -1291.621
+      },
+      {
+        "Outcome": "End-period total wealth",
+        "E0": 172.252,
+        "E1": 68693.063,
+        "Difference": 68520.811
+      },
+      {
+        "Outcome": "End-period wealth of active agents",
+        "E0": 172.252,
+        "E1": 66177.608,
+        "Difference": 66005.356
+      },
+      {
+        "Outcome": "Wealth retained by evicted-label agents",
+        "E0": 0.0,
+        "E1": 2515.455,
+        "Difference": 2515.455
+      },
+      {
+        "Outcome": "Restricted market survival (steps)",
+        "E0": 6.622,
+        "E1": 90.235,
+        "Difference": 83.612
+      },
+      {
+        "Outcome": "Wealth accounting identity error",
+        "E0": 0.0,
+        "E1": 0.0,
+        "Difference": 0.0
+      },
+      {
+        "Outcome": "Realised survival cost",
+        "E0": 0.0,
+        "E1": 0.0,
+        "Difference": 0.0
+      },
+      {
+        "Outcome": "Resource-adjusted welfare W_T - c",
+        "E0": -3827.748,
+        "E1": 64693.063,
+        "Difference": 68520.811
+      }
+    ],
+    "t76a": [
+      {
+        "Type": "H-H (cooperation)",
+        "Payoff_i": "+g_HH = +1.5",
+        "Payoff_j": "+g_HH = +1.5",
+        "S_ij": "2 g_HH = +3.0",
+        "Sign": "Positive (wealth creating)"
+      },
+      {
+        "Type": "C-C (collusion)",
+        "Payoff_i": "g_CC = -2.0",
+        "Payoff_j": "g_CC = -2.0",
+        "S_ij": "2 g_CC = -4.0",
+        "Sign": "Negative (wealth destroying)"
+      },
+      {
+        "Type": "H-C (fraud)",
+        "Payoff_i": "g_HC^H = -x",
+        "Payoff_j": "g_HC^C = +x",
+        "S_ij": "0",
+        "Sign": "Zero (pure transfer)"
+      }
+    ],
+    "t77": [
+      {
+        "c": 0.0,
+        "E": 0,
+        "wt_realised": -3817.012,
+        "cost_realised": 0.0,
+        "resource_adjusted_wt": -3817.012,
+        "end_wealth_total": 182.988,
+        "survival_steps": 6.825,
+        "trade_death": 188.175,
+        "cost_death": 0.0,
+        "cum_bankrupt": 188.175,
+        "cum_evicted": 0.0,
+        "cum_both": 0.0,
+        "cum_exit": 188.175,
+        "alive_final": 11.825,
+        "evicted_wealth": 0.0
+      },
+      {
+        "c": 0.0,
+        "E": 1,
+        "wt_realised": 80330.875,
+        "cost_realised": 0.0,
+        "resource_adjusted_wt": 80330.875,
+        "end_wealth_total": 84330.875,
+        "survival_steps": 104.25,
+        "trade_death": 34.35,
+        "cost_death": 0.0,
+        "cum_bankrupt": 34.35,
+        "cum_evicted": 74.8,
+        "cum_both": 0.0,
+        "cum_exit": 109.15,
+        "alive_final": 165.65,
+        "evicted_wealth": 2568.2
+      },
+      {
+        "c": 0.1,
+        "E": 0,
+        "wt_realised": -3619.193,
+        "cost_realised": 348.207,
+        "resource_adjusted_wt": -3967.4,
+        "end_wealth_total": 32.6,
+        "survival_steps": 6.825,
+        "trade_death": 183.725,
+        "cost_death": 12.0,
+        "cum_bankrupt": 195.725,
+        "cum_evicted": 0.0,
+        "cum_both": 0.0,
+        "cum_exit": 195.725,
+        "alive_final": 4.275,
+        "evicted_wealth": 0.0
+      },
+      {
+        "c": 0.1,
+        "E": 1,
+        "wt_realised": 80374.295,
+        "cost_realised": 1868.8,
+        "resource_adjusted_wt": 78505.495,
+        "end_wealth_total": 82505.495,
+        "survival_steps": 104.25,
+        "trade_death": 33.45,
+        "cost_death": 2.0,
+        "cum_bankrupt": 35.45,
+        "cum_evicted": 74.8,
+        "cum_both": 0.0,
+        "cum_exit": 110.25,
+        "alive_final": 164.55,
+        "evicted_wealth": 2541.107
+      },
+      {
+        "c": 0.3,
+        "E": 0,
+        "wt_realised": -3239.803,
+        "cost_realised": 760.197,
+        "resource_adjusted_wt": -4000.0,
+        "end_wealth_total": 0.0,
+        "survival_steps": 6.825,
+        "trade_death": 184.525,
+        "cost_death": 15.475,
+        "cum_bankrupt": 200.0,
+        "cum_evicted": 0.0,
+        "cum_both": 0.0,
+        "cum_exit": 200.0,
+        "alive_final": 0.0,
+        "evicted_wealth": 0.0
+      },
+      {
+        "c": 0.3,
+        "E": 1,
+        "wt_realised": 80456.902,
+        "cost_realised": 5595.593,
+        "resource_adjusted_wt": 74861.31,
+        "end_wealth_total": 78861.31,
+        "survival_steps": 104.25,
+        "trade_death": 33.375,
+        "cost_death": 2.075,
+        "cum_bankrupt": 35.45,
+        "cum_evicted": 74.8,
+        "cum_both": 0.0,
+        "cum_exit": 110.25,
+        "alive_final": 164.55,
+        "evicted_wealth": 2486.922
+      }
+    ],
+    "t78": [
+      {
+        "Specification": "Main specification (Table 7.4)",
+        "Fraud": "-456.088*** (71.882)",
+        "Conversion": "-0.768*** (0.170)",
+        "Cooperation": "40124.126*** (8983.623)",
+        "N": 1440
+      },
+      {
+        "Specification": "Configuration (rho x p) fixed effects",
+        "Fraud": "-456.088*** (53.254)",
+        "Conversion": "-0.768*** (0.122)",
+        "Cooperation": "40124.126*** (6373.299)",
+        "N": 1440
+      },
+      {
+        "Specification": "Clustered on seed (common random numbers)",
+        "Fraud": "-456.088*** (1.278)",
+        "Conversion": "-0.768*** (0.002)",
+        "Cooperation": "40124.126*** (88.113)",
+        "N": 1440
+      },
+      {
+        "Specification": "Clustered on config x seed block",
+        "Fraud": "-456.088*** (13.572)",
+        "Conversion": "-0.768*** (0.031)",
+        "Cooperation": "40124.126*** (1619.985)",
+        "N": 1440
+      },
+      {
+        "Specification": "Trading capacity a = 2 (seed clusters)",
+        "Fraud": "-420.958*** (1.830)",
+        "Conversion": "-0.831*** (0.001)",
+        "Cooperation": "28623.992*** (48.233)",
+        "N": 80
+      },
+      {
+        "Specification": "Trading capacity a = 4 (seed clusters)",
+        "Fraud": "-485.900*** (2.970)",
+        "Conversion": "-0.840*** (0.002)",
+        "Cooperation": "57851.825*** (119.609)",
+        "N": 80
+      },
+      {
+        "Specification": "Per-trade composition outcomes",
+        "Fraud": "-0.116*** (0.033)",
+        "Conversion": "n.a.",
+        "Cooperation": "0.493*** (0.090)",
+        "N": 1440
+      },
+      {
+        "Specification": "Conversion truncated to [0.02, 0.98]",
+        "Fraud": "-456.088*** (71.882)",
+        "Conversion": "-0.737*** (0.165)",
+        "Cooperation": "40124.126*** (8983.623)",
+        "N": 1440
+      }
+    ]
+  },
+  "regressions": {
+    "mechanism": {
+      "Fraud": {
+        "coef": [
+          545.243452,
+          -456.088095,
+          -646.785714,
+          154.933333,
+          307.779167,
+          1728.558201,
+          -174.9875,
+          -399.820833
+        ],
+        "se": [
+          13.08767,
+          71.882197,
+          43.976714,
+          8.087279,
+          11.476235,
+          219.861019,
+          62.986157,
+          60.175036
+        ],
+        "t": [
+          41.6608,
+          -6.3449,
+          -14.7075,
+          19.1577,
+          26.8188,
+          7.862,
+          -2.7782,
+          -6.6443
+        ],
+        "stars": [
+          "***",
+          "***",
+          "***",
+          "***",
+          "***",
+          "***",
+          "***",
+          "***"
+        ],
+        "ci_E": [
+          -613.019608,
+          -293.784324
+        ],
+        "names": [
+          "Constant",
+          "E",
+          "rho",
+          "p=3",
+          "p=4",
+          "E x rho",
+          "E x p=3",
+          "E x p=4"
+        ],
+        "n": 1440,
+        "k": 8,
+        "r2": 0.8342,
+        "clusters": 48
+      },
+      "Conversion": {
+        "coef": [
+          1.035895,
+          -0.767849,
+          -0.159532,
+          -0.00665,
+          -0.039654,
+          2.866462,
+          -0.288992,
+          -0.57392
+        ],
+        "se": [
+          0.014972,
+          0.169807,
+          0.059845,
+          0.007726,
+          0.01537,
+          0.47969,
+          0.131474,
+          0.13953
+        ],
+        "t": [
+          69.1891,
+          -4.5219,
+          -2.6658,
+          -0.8607,
+          -2.5799,
+          5.9756,
+          -2.1981,
+          -4.1132
+        ],
+        "stars": [
+          "***",
+          "***",
+          "***",
+          "",
+          "***",
+          "***",
+          "**",
+          "***"
+        ],
+        "ci_E": [
+          -1.125955,
+          -0.377162
+        ],
+        "names": [
+          "Constant",
+          "E",
+          "rho",
+          "p=3",
+          "p=4",
+          "E x rho",
+          "E x p=3",
+          "E x p=4"
+        ],
+        "n": 1440,
+        "k": 8,
+        "r2": 0.7624,
+        "clusters": 48
+      },
+      "Cooperation": {
+        "coef": [
+          1602.228571,
+          40124.12619,
+          -4992.071429,
+          315.404167,
+          684.1625,
+          -147454.542328,
+          14718.6375,
+          28120.1875
+        ],
+        "se": [
+          222.912394,
+          8983.623225,
+          952.782707,
+          146.484743,
+          224.25564,
+          23909.900654,
+          6961.207169,
+          6676.135249
+        ],
+        "t": [
+          7.1877,
+          4.4664,
+          -5.2395,
+          2.1532,
+          3.0508,
+          -6.1671,
+          2.1144,
+          4.212
+        ],
+        "stars": [
+          "***",
+          "***",
+          "***",
+          "**",
+          "***",
+          "***",
+          "**",
+          "***"
+        ],
+        "ci_E": [
+          20983.962792,
+          57256.484219
+        ],
+        "names": [
+          "Constant",
+          "E",
+          "rho",
+          "p=3",
+          "p=4",
+          "E x rho",
+          "E x p=3",
+          "E x p=4"
+        ],
+        "n": 1440,
+        "k": 8,
+        "r2": 0.795,
+        "clusters": 48
+      }
+    },
+    "mechanism_share": {
+      "Fraud share": {
+        "coef": [
+          0.115973,
+          -0.115577,
+          0.266185,
+          0.020255,
+          0.032615,
+          0.6795,
+          -0.067882,
+          -0.16682
+        ],
+        "se": [
+          0.009558,
+          0.032552,
+          0.041734,
+          0.008216,
+          0.009808,
+          0.129529,
+          0.030031,
+          0.037254
+        ],
+        "t": [
+          12.1335,
+          -3.5506,
+          6.3781,
+          2.4653,
+          3.3253,
+          5.2459,
+          -2.2604,
+          -4.4779
+        ],
+        "stars": [
+          "***",
+          "***",
+          "***",
+          "**",
+          "***",
+          "***",
+          "**",
+          "***"
+        ],
+        "ci_E": [
+          NaN,
+          NaN
+        ],
+        "names": [
+          "Constant",
+          "E",
+          "rho",
+          "p=3",
+          "p=4",
+          "E x rho",
+          "E x p=3",
+          "E x p=4"
+        ],
+        "n": 1440,
+        "k": 8,
+        "r2": 0.766,
+        "clusters": 48
+      },
+      "Cooperation share": {
+        "coef": [
+          0.355184,
+          0.49306,
+          -0.759942,
+          0.046623,
+          0.081663,
+          -1.356359,
+          0.215875,
+          0.396684
+        ],
+        "se": [
+          0.011659,
+          0.089501,
+          0.046754,
+          0.010369,
+          0.010964,
+          0.264387,
+          0.063279,
+          0.076938
+        ],
+        "t": [
+          30.464,
+          5.509,
+          -16.254,
+          4.4966,
+          7.4485,
+          -5.1302,
+          3.4115,
+          5.1559
+        ],
+        "stars": [
+          "***",
+          "***",
+          "***",
+          "***",
+          "***",
+          "***",
+          "***",
+          "***"
+        ],
+        "ci_E": [
+          NaN,
+          NaN
+        ],
+        "names": [
+          "Constant",
+          "E",
+          "rho",
+          "p=3",
+          "p=4",
+          "E x rho",
+          "E x p=3",
+          "E x p=4"
+        ],
+        "n": 1440,
+        "k": 8,
+        "r2": 0.8944,
+        "clusters": 48
+      }
+    },
+    "collapse": [
+      {
+        "Specification": "(1) Baseline",
+        "beta_E": 140.8589,
+        "se_E": 33.0183,
+        "t_E": 4.266,
+        "ci_E": [
+          70.0051,
+          203.7994
+        ],
+        "r2": 0.7666,
+        "n": 1440
+      },
+      {
+        "Specification": "(2) + post-treatment outcomes",
+        "beta_E": 3.2881,
+        "se_E": 3.6388,
+        "t_E": 0.904,
+        "ci_E": [
+          -7.3742,
+          12.7292
+        ],
+        "r2": 0.9967,
+        "n": 1440,
+        "Fraud / 1e3": [
+          119.0665,
+          29.7398,
+          4.004
+        ],
+        "Conversion": [
+          -176.4424,
+          24.6728,
+          -7.151
+        ],
+        "Cooperation / 1e3": [
+          1.4055,
+          0.6227,
+          2.257
+        ]
+      },
+      {
+        "Specification": "(3) + outcomes, config FE",
+        "beta_E": 4.2443,
+        "se_E": 2.0181,
+        "t_E": 2.103,
+        "ci_E": [
+          -35.3573,
+          10.3293
+        ],
+        "r2": 0.9982,
+        "n": 1440,
+        "Fraud / 1e3": [
+          113.5458,
+          13.5194,
+          8.399
+        ],
+        "Conversion": [
+          -173.2919,
+          14.9783,
+          -11.57
+        ],
+        "Cooperation / 1e3": [
+          1.3792,
+          0.3264,
+          4.226
+        ]
+      }
+    ]
+  }
+}

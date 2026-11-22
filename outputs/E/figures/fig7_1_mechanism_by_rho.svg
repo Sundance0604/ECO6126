@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 270" width="1020" height="270" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="340" height="270" fill="#ffffff"/>
+<text x="66.0" y="16" font-size="12" fill="#111">(a) Fraudulent trades</text>
+<line x1="66.00" y1="224.00" x2="324.00" y2="224.00" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="227.20" font-size="9.5" fill="#333" text-anchor="end">0</text>
+<line x1="66.00" y1="174.27" x2="324.00" y2="174.27" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="177.47" font-size="9.5" fill="#333" text-anchor="end">200</text>
+<line x1="66.00" y1="124.54" x2="324.00" y2="124.54" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="127.74" font-size="9.5" fill="#333" text-anchor="end">400</text>
+<line x1="66.00" y1="74.80" x2="324.00" y2="74.80" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="78.00" font-size="9.5" fill="#333" text-anchor="end">600</text>
+<line x1="72.97" y1="224.00" x2="72.97" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="72.97" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.05</text>
+<line x1="107.84" y1="224.00" x2="107.84" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="107.84" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.10</text>
+<line x1="142.70" y1="224.00" x2="142.70" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="142.70" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.15</text>
+<line x1="177.57" y1="224.00" x2="177.57" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="177.57" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.20</text>
+<line x1="212.43" y1="224.00" x2="212.43" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="212.43" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.25</text>
+<line x1="247.30" y1="224.00" x2="247.30" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="247.30" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.30</text>
+<line x1="282.16" y1="224.00" x2="282.16" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="282.16" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.35</text>
+<line x1="317.03" y1="224.00" x2="317.03" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="317.03" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.40</text>
+<line x1="66.00" y1="46.00" x2="66.00" y2="224.00" stroke="#111" stroke-width="0.9"/>
+<line x1="66.00" y1="224.00" x2="324.00" y2="224.00" stroke="#111" stroke-width="0.9"/>
+<text x="195.00" y="264.00" font-size="10.5" fill="#111" text-anchor="middle">Initial cheater share rho</text>
+<text x="14" y="135.00" font-size="10.5" fill="#111" text-anchor="middle" transform="rotate(-90 14 135.00)">H-C trades per run</text>
+<polyline points="72.97,58.52 107.84,66.06 142.70,73.98 177.57,82.30 212.43,90.03 247.30,97.99 282.16,106.21 317.03,114.94" fill="none" stroke="#000000" stroke-width="1.7"/>
+<circle cx="72.97" cy="58.52" r="2.60" fill="#000000"/>
+<circle cx="107.84" cy="66.06" r="2.60" fill="#000000"/>
+<circle cx="142.70" cy="73.98" r="2.60" fill="#000000"/>
+<circle cx="177.57" cy="82.30" r="2.60" fill="#000000"/>
+<circle cx="212.43" cy="90.03" r="2.60" fill="#000000"/>
+<circle cx="247.30" cy="97.99" r="2.60" fill="#000000"/>
+<circle cx="282.16" cy="106.21" r="2.60" fill="#000000"/>
+<circle cx="317.03" cy="114.94" r="2.60" fill="#000000"/>
+<polyline points="72.97,215.02 107.84,176.85 142.70,170.80 177.57,145.73 212.43,134.57 247.30,131.65 282.16,111.49 317.03,118.69" fill="none" stroke="#3d3d3d" stroke-width="1.7" stroke-dasharray="7 3"/>
+<rect x="70.37" y="212.42" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="105.24" y="174.25" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="140.10" y="168.20" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="174.97" y="143.13" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="209.83" y="131.97" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="244.70" y="129.05" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="279.56" y="108.89" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="314.43" y="116.09" width="5.20" height="5.20" fill="#3d3d3d"/>
+<line x1="70.00" y1="35.00" x2="86.00" y2="35.00" stroke="#000000" stroke-width="1.7"/>
+<circle cx="78.00" cy="35.00" r="2.40" fill="#000000"/>
+<text x="90.00" y="38.00" font-size="9.0" fill="#222">E = 0</text>
+<line x1="199.00" y1="35.00" x2="215.00" y2="35.00" stroke="#3d3d3d" stroke-width="1.7" stroke-dasharray="7 3"/>
+<rect x="204.60" y="32.60" width="4.80" height="4.80" fill="#3d3d3d"/>
+<text x="219.00" y="38.00" font-size="9.0" fill="#222">E = 1</text>
+</g>
+<g transform="translate(340,0)">
+<rect x="0" y="0" width="340" height="270" fill="#ffffff"/>
+<text x="66.0" y="16" font-size="12" fill="#111">(b) Conversion share</text>
+<line x1="66.00" y1="224.00" x2="324.00" y2="224.00" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="227.20" font-size="9.5" fill="#333" text-anchor="end">0</text>
+<line x1="66.00" y1="182.78" x2="324.00" y2="182.78" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="185.98" font-size="9.5" fill="#333" text-anchor="end">0.25</text>
+<line x1="66.00" y1="141.56" x2="324.00" y2="141.56" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="144.76" font-size="9.5" fill="#333" text-anchor="end">0.50</text>
+<line x1="66.00" y1="100.34" x2="324.00" y2="100.34" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="103.54" font-size="9.5" fill="#333" text-anchor="end">0.75</text>
+<line x1="66.00" y1="59.12" x2="324.00" y2="59.12" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="62.32" font-size="9.5" fill="#333" text-anchor="end">1</text>
+<line x1="72.97" y1="224.00" x2="72.97" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="72.97" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.05</text>
+<line x1="107.84" y1="224.00" x2="107.84" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="107.84" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.10</text>
+<line x1="142.70" y1="224.00" x2="142.70" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="142.70" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.15</text>
+<line x1="177.57" y1="224.00" x2="177.57" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="177.57" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.20</text>
+<line x1="212.43" y1="224.00" x2="212.43" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="212.43" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.25</text>
+<line x1="247.30" y1="224.00" x2="247.30" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="247.30" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.30</text>
+<line x1="282.16" y1="224.00" x2="282.16" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="282.16" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.35</text>
+<line x1="317.03" y1="224.00" x2="317.03" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="317.03" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.40</text>
+<line x1="66.00" y1="46.00" x2="66.00" y2="224.00" stroke="#111" stroke-width="0.9"/>
+<line x1="66.00" y1="224.00" x2="324.00" y2="224.00" stroke="#111" stroke-width="0.9"/>
+<text x="195.00" y="264.00" font-size="10.5" fill="#111" text-anchor="middle">Initial cheater share rho</text>
+<text x="14" y="135.00" font-size="10.5" fill="#111" text-anchor="middle" transform="rotate(-90 14 135.00)">Share of initial honest</text>
+<polyline points="72.97,59.12 107.84,59.14 142.70,59.14 177.57,59.38 212.43,60.01 247.30,61.97 282.16,65.47 317.03,69.07" fill="none" stroke="#000000" stroke-width="1.7"/>
+<circle cx="72.97" cy="59.12" r="2.60" fill="#000000"/>
+<circle cx="107.84" cy="59.14" r="2.60" fill="#000000"/>
+<circle cx="142.70" cy="59.14" r="2.60" fill="#000000"/>
+<circle cx="177.57" cy="59.38" r="2.60" fill="#000000"/>
+<circle cx="212.43" cy="60.01" r="2.60" fill="#000000"/>
+<circle cx="247.30" cy="61.97" r="2.60" fill="#000000"/>
+<circle cx="282.16" cy="65.47" r="2.60" fill="#000000"/>
+<circle cx="317.03" cy="69.07" r="2.60" fill="#000000"/>
+<polyline points="72.97,223.06 107.84,168.86 142.70,167.56 177.57,132.98 212.43,113.05 247.30,107.77 282.16,60.17 317.03,61.36" fill="none" stroke="#3d3d3d" stroke-width="1.7" stroke-dasharray="7 3"/>
+<rect x="70.37" y="220.46" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="105.24" y="166.26" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="140.10" y="164.96" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="174.97" y="130.38" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="209.83" y="110.45" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="244.70" y="105.17" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="279.56" y="57.57" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="314.43" y="58.76" width="5.20" height="5.20" fill="#3d3d3d"/>
+<line x1="70.00" y1="35.00" x2="86.00" y2="35.00" stroke="#000000" stroke-width="1.7"/>
+<circle cx="78.00" cy="35.00" r="2.40" fill="#000000"/>
+<text x="90.00" y="38.00" font-size="9.0" fill="#222">E = 0</text>
+<line x1="199.00" y1="35.00" x2="215.00" y2="35.00" stroke="#3d3d3d" stroke-width="1.7" stroke-dasharray="7 3"/>
+<rect x="204.60" y="32.60" width="4.80" height="4.80" fill="#3d3d3d"/>
+<text x="219.00" y="38.00" font-size="9.0" fill="#222">E = 1</text>
+</g>
+<g transform="translate(680,0)">
+<rect x="0" y="0" width="340" height="270" fill="#ffffff"/>
+<text x="66.0" y="16" font-size="12" fill="#111">(c) Cooperative trades</text>
+<line x1="66.00" y1="224.00" x2="324.00" y2="224.00" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="227.20" font-size="9.5" fill="#333" text-anchor="end">0</text>
+<line x1="66.00" y1="165.45" x2="324.00" y2="165.45" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="168.65" font-size="9.5" fill="#333" text-anchor="end">20000</text>
+<line x1="66.00" y1="106.89" x2="324.00" y2="106.89" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="110.09" font-size="9.5" fill="#333" text-anchor="end">40000</text>
+<line x1="66.00" y1="48.34" x2="324.00" y2="48.34" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="51.54" font-size="9.5" fill="#333" text-anchor="end">60000</text>
+<line x1="72.97" y1="224.00" x2="72.97" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="72.97" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.05</text>
+<line x1="107.84" y1="224.00" x2="107.84" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="107.84" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.10</text>
+<line x1="142.70" y1="224.00" x2="142.70" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="142.70" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.15</text>
+<line x1="177.57" y1="224.00" x2="177.57" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="177.57" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.20</text>
+<line x1="212.43" y1="224.00" x2="212.43" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="212.43" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.25</text>
+<line x1="247.30" y1="224.00" x2="247.30" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="247.30" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.30</text>
+<line x1="282.16" y1="224.00" x2="282.16" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="282.16" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.35</text>
+<line x1="317.03" y1="224.00" x2="317.03" y2="228.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="317.03" y="240.00" font-size="9.5" fill="#333" text-anchor="middle">0.40</text>
+<line x1="66.00" y1="46.00" x2="66.00" y2="224.00" stroke="#111" stroke-width="0.9"/>
+<line x1="66.00" y1="224.00" x2="324.00" y2="224.00" stroke="#111" stroke-width="0.9"/>
+<text x="195.00" y="264.00" font-size="10.5" fill="#111" text-anchor="middle">Initial cheater share rho</text>
+<text x="14" y="135.00" font-size="10.5" fill="#111" text-anchor="middle" transform="rotate(-90 14 135.00)">H-H trades per run</text>
+<polyline points="72.97,217.32 107.84,220.22 142.70,221.42 177.57,222.11 212.43,222.56 247.30,222.89 282.16,223.14 317.03,223.31" fill="none" stroke="#000000" stroke-width="1.7"/>
+<circle cx="72.97" cy="217.32" r="2.60" fill="#000000"/>
+<circle cx="107.84" cy="220.22" r="2.60" fill="#000000"/>
+<circle cx="142.70" cy="221.42" r="2.60" fill="#000000"/>
+<circle cx="177.57" cy="222.11" r="2.60" fill="#000000"/>
+<circle cx="212.43" cy="222.56" r="2.60" fill="#000000"/>
+<circle cx="247.30" cy="222.89" r="2.60" fill="#000000"/>
+<circle cx="282.16" cy="223.14" r="2.60" fill="#000000"/>
+<circle cx="317.03" cy="223.31" r="2.60" fill="#000000"/>
+<polyline points="72.97,59.13 107.84,118.03 142.70,125.92 177.57,159.61 212.43,180.18 247.30,187.53 282.16,222.36 317.03,223.06" fill="none" stroke="#3d3d3d" stroke-width="1.7" stroke-dasharray="7 3"/>
+<rect x="70.37" y="56.53" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="105.24" y="115.43" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="140.10" y="123.32" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="174.97" y="157.01" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="209.83" y="177.58" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="244.70" y="184.93" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="279.56" y="219.76" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="314.43" y="220.46" width="5.20" height="5.20" fill="#3d3d3d"/>
+<line x1="70.00" y1="35.00" x2="86.00" y2="35.00" stroke="#000000" stroke-width="1.7"/>
+<circle cx="78.00" cy="35.00" r="2.40" fill="#000000"/>
+<text x="90.00" y="38.00" font-size="9.0" fill="#222">E = 0</text>
+<line x1="199.00" y1="35.00" x2="215.00" y2="35.00" stroke="#3d3d3d" stroke-width="1.7" stroke-dasharray="7 3"/>
+<rect x="204.60" y="32.60" width="4.80" height="4.80" fill="#3d3d3d"/>
+<text x="219.00" y="38.00" font-size="9.0" fill="#222">E = 1</text>
+</g>
+</svg>

@@ -1,0 +1,18 @@
+Outcome,E0,E1,Difference
+"W_T, realised social net benefit",-3827.748,64693.063,68520.811
+"W_T, theoretical (no truncation)",-4274.251,64571.619,68845.871
+Theoretical minus realised,-446.503,-121.444,325.06
+Contribution of H-H trades,2436.604,66115.992,63679.388
+Contribution of C-C trades,-6710.856,-1544.372,5166.483
+Contribution of H-C trades,0.0,0.0,0.0
+Cooperative trade volume (trades),812.201,22038.664,21226.462
+Cooperative traded value (2 g_HH x trades),2436.604,66115.992,63679.388
+Fraudulent trades,553.954,295.189,-258.765
+Cheater-cheater trades,1677.714,386.093,-1291.621
+End-period total wealth,172.252,68693.063,68520.811
+End-period wealth of active agents,172.252,66177.608,66005.356
+Wealth retained by evicted-label agents,0.0,2515.455,2515.455
+Restricted market survival (steps),6.622,90.235,83.612
+Wealth accounting identity error,0.0,0.0,0.0
+Realised survival cost,0.0,0.0,0.0
+Resource-adjusted welfare W_T - c,-3827.748,64693.063,68520.811

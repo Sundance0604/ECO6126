@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 275" width="1020" height="275" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="340" height="275" fill="#ffffff"/>
+<text x="66.0" y="16" font-size="12" fill="#111">(a) Welfare under a survival cost</text>
+<line x1="66.00" y1="208.91" x2="324.00" y2="208.91" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="212.11" font-size="9.5" fill="#333" text-anchor="end">0</text>
+<line x1="66.00" y1="171.55" x2="324.00" y2="171.55" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="174.75" font-size="9.5" fill="#333" text-anchor="end">20000</text>
+<line x1="66.00" y1="134.19" x2="324.00" y2="134.19" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="137.39" font-size="9.5" fill="#333" text-anchor="end">40000</text>
+<line x1="66.00" y1="96.83" x2="324.00" y2="96.83" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="100.03" font-size="9.5" fill="#333" text-anchor="end">60000</text>
+<line x1="66.00" y1="59.47" x2="324.00" y2="59.47" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="62.67" font-size="9.5" fill="#333" text-anchor="end">80000</text>
+<line x1="74.06" y1="229.00" x2="74.06" y2="233.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="74.06" y="245.00" font-size="9.5" fill="#333" text-anchor="middle">0</text>
+<line x1="154.69" y1="229.00" x2="154.69" y2="233.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="154.69" y="245.00" font-size="9.5" fill="#333" text-anchor="middle">0.10</text>
+<line x1="235.31" y1="229.00" x2="235.31" y2="233.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="235.31" y="245.00" font-size="9.5" fill="#333" text-anchor="middle">0.20</text>
+<line x1="315.94" y1="229.00" x2="315.94" y2="233.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="315.94" y="245.00" font-size="9.5" fill="#333" text-anchor="middle">0.30</text>
+<line x1="66.00" y1="46.00" x2="66.00" y2="229.00" stroke="#111" stroke-width="0.9"/>
+<line x1="66.00" y1="229.00" x2="324.00" y2="229.00" stroke="#111" stroke-width="0.9"/>
+<line x1="66.00" y1="208.91" x2="324.00" y2="208.91" stroke="#888" stroke-width="0.8"/>
+<text x="195.00" y="269.00" font-size="10.5" fill="#111" text-anchor="middle">Per-step cost c</text>
+<text x="14" y="137.50" font-size="10.5" fill="#111" text-anchor="middle" transform="rotate(-90 14 137.50)">Welfare</text>
+<polyline points="74.06,216.04 154.69,215.67 315.94,214.96" fill="none" stroke="#000000" stroke-width="1.7"/>
+<circle cx="74.06" cy="216.04" r="2.60" fill="#000000"/>
+<circle cx="154.69" cy="215.67" r="2.60" fill="#000000"/>
+<circle cx="315.94" cy="214.96" r="2.60" fill="#000000"/>
+<polyline points="74.06,58.86 154.69,58.77 315.94,58.62" fill="none" stroke="#3d3d3d" stroke-width="1.7" stroke-dasharray="7 3"/>
+<rect x="71.46" y="56.26" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="152.09" y="56.17" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="313.34" y="56.02" width="5.20" height="5.20" fill="#3d3d3d"/>
+<polyline points="74.06,216.04 154.69,216.32 315.94,216.38" fill="none" stroke="#6e6e6e" stroke-width="1.7" stroke-dasharray="2 2"/>
+<polygon points="74.06,213.44 71.46,218.64 76.66,218.64" fill="#6e6e6e"/>
+<polygon points="154.69,213.72 152.09,218.92 157.29,218.92" fill="#6e6e6e"/>
+<polygon points="315.94,213.78 313.34,218.98 318.54,218.98" fill="#6e6e6e"/>
+<polyline points="74.06,58.86 154.69,62.27 315.94,69.07" fill="none" stroke="#939393" stroke-width="1.7" stroke-dasharray="9 2 2 2"/>
+<polygon points="74.06,61.46 71.46,56.26 76.66,56.26" fill="#939393"/>
+<polygon points="154.69,64.87 152.09,59.67 157.29,59.67" fill="#939393"/>
+<polygon points="315.94,71.67 313.34,66.47 318.54,66.47" fill="#939393"/>
+<line x1="70.00" y1="23.00" x2="86.00" y2="23.00" stroke="#000000" stroke-width="1.7"/>
+<circle cx="78.00" cy="23.00" r="2.40" fill="#000000"/>
+<text x="90.00" y="26.00" font-size="9.0" fill="#222">Welfare, E = 0</text>
+<line x1="199.00" y1="23.00" x2="215.00" y2="23.00" stroke="#3d3d3d" stroke-width="1.7" stroke-dasharray="7 3"/>
+<rect x="204.60" y="20.60" width="4.80" height="4.80" fill="#3d3d3d"/>
+<text x="219.00" y="26.00" font-size="9.0" fill="#222">Welfare, E = 1</text>
+<line x1="70.00" y1="34.00" x2="86.00" y2="34.00" stroke="#6e6e6e" stroke-width="1.7" stroke-dasharray="2 2"/>
+<polygon points="78.00,31.60 75.60,36.40 80.40,36.40" fill="#6e6e6e"/>
+<text x="90.00" y="37.00" font-size="9.0" fill="#222">Adjusted, E = 0</text>
+<line x1="199.00" y1="34.00" x2="215.00" y2="34.00" stroke="#939393" stroke-width="1.7" stroke-dasharray="9 2 2 2"/>
+<polygon points="207.00,36.40 204.60,31.60 209.40,31.60" fill="#939393"/>
+<text x="219.00" y="37.00" font-size="9.0" fill="#222">Adjusted, E = 1</text>
+</g>
+<g transform="translate(340,0)">
+<rect x="0" y="0" width="340" height="275" fill="#ffffff"/>
+<text x="66.0" y="16" font-size="12" fill="#111">(b) Trade deaths and cost deaths</text>
+<line x1="66.00" y1="216.38" x2="324.00" y2="216.38" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="219.58" font-size="9.5" fill="#333" text-anchor="end">0</text>
+<line x1="66.00" y1="174.46" x2="324.00" y2="174.46" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="177.66" font-size="9.5" fill="#333" text-anchor="end">50</text>
+<line x1="66.00" y1="132.54" x2="324.00" y2="132.54" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="135.74" font-size="9.5" fill="#333" text-anchor="end">100</text>
+<line x1="66.00" y1="90.63" x2="324.00" y2="90.63" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="93.83" font-size="9.5" fill="#333" text-anchor="end">150</text>
+<line x1="66.00" y1="48.71" x2="324.00" y2="48.71" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="51.91" font-size="9.5" fill="#333" text-anchor="end">200</text>
+<line x1="109.00" y1="229.00" x2="109.00" y2="233.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="109.00" y="245.00" font-size="9.5" fill="#333" text-anchor="middle">c = 0</text>
+<line x1="195.00" y1="229.00" x2="195.00" y2="233.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="195.00" y="245.00" font-size="9.5" fill="#333" text-anchor="middle">c = 0.10</text>
+<line x1="281.00" y1="229.00" x2="281.00" y2="233.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="281.00" y="245.00" font-size="9.5" fill="#333" text-anchor="middle">c = 0.30</text>
+<line x1="66.00" y1="46.00" x2="66.00" y2="229.00" stroke="#111" stroke-width="0.9"/>
+<line x1="66.00" y1="229.00" x2="324.00" y2="229.00" stroke="#111" stroke-width="0.9"/>
+<line x1="66.00" y1="216.38" x2="324.00" y2="216.38" stroke="#888" stroke-width="0.8"/>
+<text x="195.00" y="269.00" font-size="10.5" fill="#111" text-anchor="middle">Per-step cost c</text>
+<text x="14" y="137.50" font-size="10.5" fill="#111" text-anchor="middle" transform="rotate(-90 14 137.50)">Agents</text>
+<rect x="75.92" y="58.62" width="14.55" height="157.76" fill="#000000" stroke="#111" stroke-width="0.6"/>
+<rect x="161.92" y="62.35" width="14.55" height="154.03" fill="#000000" stroke="#111" stroke-width="0.6"/>
+<rect x="247.92" y="61.68" width="14.55" height="154.70" fill="#000000" stroke="#111" stroke-width="0.6"/>
+<rect x="92.46" y="216.38" width="14.55" height="0.00" fill="#c0c0c0" stroke="#111" stroke-width="0.6"/>
+<rect x="178.46" y="206.32" width="14.55" height="10.06" fill="#c0c0c0" stroke="#111" stroke-width="0.6"/>
+<rect x="264.46" y="203.41" width="14.55" height="12.97" fill="#c0c0c0" stroke="#111" stroke-width="0.6"/>
+<rect x="109.00" y="187.58" width="14.55" height="28.80" fill="#808080" stroke="#111" stroke-width="0.6"/>
+<rect x="195.00" y="188.34" width="14.55" height="28.04" fill="#808080" stroke="#111" stroke-width="0.6"/>
+<rect x="281.00" y="188.40" width="14.55" height="27.98" fill="#808080" stroke="#111" stroke-width="0.6"/>
+<rect x="125.54" y="216.38" width="14.55" height="0.00" fill="#808080" stroke="#111" stroke-width="0.6"/>
+<rect x="211.54" y="214.70" width="14.55" height="1.68" fill="#808080" stroke="#111" stroke-width="0.6"/>
+<rect x="297.54" y="214.64" width="14.55" height="1.74" fill="#808080" stroke="#111" stroke-width="0.6"/>
+<line x1="70.00" y1="23.00" x2="86.00" y2="23.00" stroke="#000000" stroke-width="1.7"/>
+<circle cx="78.00" cy="23.00" r="2.40" fill="#000000"/>
+<text x="90.00" y="26.00" font-size="9.0" fill="#222">Trade, E = 0</text>
+<line x1="199.00" y1="23.00" x2="215.00" y2="23.00" stroke="#3d3d3d" stroke-width="1.7" stroke-dasharray="7 3"/>
+<rect x="204.60" y="20.60" width="4.80" height="4.80" fill="#3d3d3d"/>
+<text x="219.00" y="26.00" font-size="9.0" fill="#222">Cost, E = 0</text>
+<line x1="70.00" y1="34.00" x2="86.00" y2="34.00" stroke="#6e6e6e" stroke-width="1.7" stroke-dasharray="2 2"/>
+<polygon points="78.00,31.60 75.60,36.40 80.40,36.40" fill="#6e6e6e"/>
+<text x="90.00" y="37.00" font-size="9.0" fill="#222">Trade, E = 1</text>
+<line x1="199.00" y1="34.00" x2="215.00" y2="34.00" stroke="#939393" stroke-width="1.7" stroke-dasharray="9 2 2 2"/>
+<polygon points="207.00,36.40 204.60,31.60 209.40,31.60" fill="#939393"/>
+<text x="219.00" y="37.00" font-size="9.0" fill="#222">Cost, E = 1</text>
+</g>
+<g transform="translate(680,0)">
+<rect x="0" y="0" width="340" height="275" fill="#ffffff"/>
+<text x="66.0" y="16" font-size="12" fill="#111">(c) Survival and market exit</text>
+<line x1="66.00" y1="216.38" x2="324.00" y2="216.38" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="219.58" font-size="9.5" fill="#333" text-anchor="end">0</text>
+<line x1="66.00" y1="176.94" x2="324.00" y2="176.94" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="180.14" font-size="9.5" fill="#333" text-anchor="end">50</text>
+<line x1="66.00" y1="137.50" x2="324.00" y2="137.50" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="140.70" font-size="9.5" fill="#333" text-anchor="end">100</text>
+<line x1="66.00" y1="98.06" x2="324.00" y2="98.06" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="101.26" font-size="9.5" fill="#333" text-anchor="end">150</text>
+<line x1="66.00" y1="58.62" x2="324.00" y2="58.62" stroke="#dcdcdc" stroke-width="0.7" stroke-dasharray="3 3"/>
+<text x="59.00" y="61.82" font-size="9.5" fill="#333" text-anchor="end">200</text>
+<line x1="74.06" y1="229.00" x2="74.06" y2="233.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="74.06" y="245.00" font-size="9.5" fill="#333" text-anchor="middle">0</text>
+<line x1="154.69" y1="229.00" x2="154.69" y2="233.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="154.69" y="245.00" font-size="9.5" fill="#333" text-anchor="middle">0.10</text>
+<line x1="235.31" y1="229.00" x2="235.31" y2="233.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="235.31" y="245.00" font-size="9.5" fill="#333" text-anchor="middle">0.20</text>
+<line x1="315.94" y1="229.00" x2="315.94" y2="233.00" stroke="#e6e6e6" stroke-width="0.6"/>
+<text x="315.94" y="245.00" font-size="9.5" fill="#333" text-anchor="middle">0.30</text>
+<line x1="66.00" y1="46.00" x2="66.00" y2="229.00" stroke="#111" stroke-width="0.9"/>
+<line x1="66.00" y1="229.00" x2="324.00" y2="229.00" stroke="#111" stroke-width="0.9"/>
+<line x1="66.00" y1="216.38" x2="324.00" y2="216.38" stroke="#888" stroke-width="0.8"/>
+<text x="195.00" y="269.00" font-size="10.5" fill="#111" text-anchor="middle">Per-step cost c</text>
+<text x="14" y="137.50" font-size="10.5" fill="#111" text-anchor="middle" transform="rotate(-90 14 137.50)">Agents</text>
+<polyline points="74.06,207.05 154.69,213.01 315.94,216.38" fill="none" stroke="#000000" stroke-width="1.7"/>
+<circle cx="74.06" cy="207.05" r="2.60" fill="#000000"/>
+<circle cx="154.69" cy="213.01" r="2.60" fill="#000000"/>
+<circle cx="315.94" cy="216.38" r="2.60" fill="#000000"/>
+<polyline points="74.06,85.72 154.69,86.58 315.94,86.58" fill="none" stroke="#3d3d3d" stroke-width="1.7" stroke-dasharray="7 3"/>
+<rect x="71.46" y="83.12" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="152.09" y="83.98" width="5.20" height="5.20" fill="#3d3d3d"/>
+<rect x="313.34" y="83.98" width="5.20" height="5.20" fill="#3d3d3d"/>
+<polyline points="74.06,67.95 154.69,61.99 315.94,58.62" fill="none" stroke="#6e6e6e" stroke-width="1.7" stroke-dasharray="2 2"/>
+<polygon points="74.06,65.35 71.46,70.55 76.66,70.55" fill="#6e6e6e"/>
+<polygon points="154.69,59.39 152.09,64.59 157.29,64.59" fill="#6e6e6e"/>
+<polygon points="315.94,56.02 313.34,61.22 318.54,61.22" fill="#6e6e6e"/>
+<polyline points="74.06,189.28 154.69,188.42 315.94,188.42" fill="none" stroke="#939393" stroke-width="1.7" stroke-dasharray="9 2 2 2"/>
+<polygon points="74.06,191.88 71.46,186.68 76.66,186.68" fill="#939393"/>
+<polygon points="154.69,191.02 152.09,185.82 157.29,185.82" fill="#939393"/>
+<polygon points="315.94,191.02 313.34,185.82 318.54,185.82" fill="#939393"/>
+<line x1="70.00" y1="23.00" x2="86.00" y2="23.00" stroke="#000000" stroke-width="1.7"/>
+<circle cx="78.00" cy="23.00" r="2.40" fill="#000000"/>
+<text x="90.00" y="26.00" font-size="9.0" fill="#222">Alive, E = 0</text>
+<line x1="199.00" y1="23.00" x2="215.00" y2="23.00" stroke="#3d3d3d" stroke-width="1.7" stroke-dasharray="7 3"/>
+<rect x="204.60" y="20.60" width="4.80" height="4.80" fill="#3d3d3d"/>
+<text x="219.00" y="26.00" font-size="9.0" fill="#222">Alive, E = 1</text>
+<line x1="70.00" y1="34.00" x2="86.00" y2="34.00" stroke="#6e6e6e" stroke-width="1.7" stroke-dasharray="2 2"/>
+<polygon points="78.00,31.60 75.60,36.40 80.40,36.40" fill="#6e6e6e"/>
+<text x="90.00" y="37.00" font-size="9.0" fill="#222">Deaths, E = 0</text>
+<line x1="199.00" y1="34.00" x2="215.00" y2="34.00" stroke="#939393" stroke-width="1.7" stroke-dasharray="9 2 2 2"/>
+<polygon points="207.00,36.40 204.60,31.60 209.40,31.60" fill="#939393"/>
+<text x="219.00" y="37.00" font-size="9.0" fill="#222">Deaths, E = 1</text>
+</g>
+</svg>

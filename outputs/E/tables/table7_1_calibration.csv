@@ -1,0 +1,15 @@
+Parameter,Symbol,Value,Role
+Market size,N,200,"Closed population, no entry"
+Initial honest / cheaters,H0 / C0,N(1-rho) / N*rho,rho on 0.05-0.40 grid
+Initial wealth,w0,20,Identical for every agent
+Observation window,T,200,"Fixed horizon, right censoring"
+Counterparties per step,a,3,"Robustness: 2, 4"
+H-H one-sided payoff,g_HH,+1.5,2 g_HH = +3 per trade
+C-C one-sided payoff,g_CC,-2.0,2 g_CC = -4 per trade
+H-C transfer,x,5.0,"Pure transfer, sum = 0"
+Conversion threshold,p,"2, 3, 4",Victimisations before H becomes C
+Eviction threshold,q,3,Reports before expulsion
+Survival cost,c,"0 (main); 0.10, 0.30",Per active agent per step
+Expulsion switch,E,"0, 1",Institutional treatment
+Bankruptcy,w <= 0,always on,"Wealth zeroed, agent exits"
+Seeds per cell,S,"30 (main), 20 (subsamples)",Common random numbers

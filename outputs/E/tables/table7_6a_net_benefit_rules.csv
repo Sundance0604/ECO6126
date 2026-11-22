@@ -1,0 +1,4 @@
+Type,Payoff_i,Payoff_j,S_ij,Sign
+H-H (cooperation),+g_HH = +1.5,+g_HH = +1.5,2 g_HH = +3.0,Positive (wealth creating)
+C-C (collusion),g_CC = -2.0,g_CC = -2.0,2 g_CC = -4.0,Negative (wealth destroying)
+H-C (fraud),g_HC^H = -x,g_HC^C = +x,0,Zero (pure transfer)

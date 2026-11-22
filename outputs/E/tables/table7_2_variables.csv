@@ -1,0 +1,27 @@
+Block,Variable,Definition
+Macro,Active agents,Number of agents still participating in the market
+Macro,Active honest / cheaters,Active agents split by current identity
+Macro,Active wealth,Sum of wealth held by active agents
+Macro,Evicted-label wealth,Wealth retained at exit by agents carrying the eviction label
+Macro,Cumulative conversions,Honest agents crossing m >= p
+Macro,Cumulative bankruptcy / eviction / both,Exit labels; both records simultaneous triggers
+Macro,Cumulative exits,Agents leaving the market under any label
+Macro,Trade edges in step,Distinct pairs settled in the current step
+Macro,Surviving agents,Agents with positive wealth (alive flag)
+Macro,Cumulative deaths,Agents whose wealth reached zero
+Macro,Trade / cost deaths,Deaths caused by trading losses / by the survival cost
+Individual,Identity,Honest (H) or cheater (C) at the end of the step
+Individual,Current wealth,Balance after step-end settlement
+Individual,Cumulative victimisation m,Number of fraudulent encounters
+Individual,Report count r,Reports accumulated by a cheater
+Individual,Blacklist size,Number of counterparties blacklisted by the agent
+Individual,Blacklisted-by count,Number of agents blacklisting this agent
+Individual,First-exit wealth snapshot,Wealth recorded at the first exit
+Individual,First-exit time,Step of the first exit
+Individual,Death time,Step in which wealth reached zero
+Individual,Death cause,"-1 none, 0 trade death, 1 cost death"
+Activity,Active flag,"1 while participating, 0 after exit"
+Activity,Bankruptcy flag,1 if wealth was exhausted
+Activity,Eviction flag,1 if r reached q under E = 1
+Activity,Both flag,1 if bankruptcy and eviction triggered together
+Activity,Alive flag,1 while wealth is positive; exit need not imply death

@@ -1,0 +1,25 @@
+Variable,E0_mean,E0_sd,E1_mean,E1_sd,Difference
+Restricted survival steps,6.622,2.921,90.235,95.818,83.612
+Collapse observed (0/1),1.0,0.0,0.568,0.496,-0.432
+Fraudulent trades (H-C),553.954,147.358,295.189,175.523,-258.765
+Cooperative trades (H-H),812.201,751.495,22038.664,24832.933,21226.462
+Cheater-cheater trades (C-C),1677.714,490.531,386.093,358.395,-1291.621
+All traded edges,3043.869,1353.703,22719.946,24346.482,19676.076
+Conversion share of H0,0.985,0.037,0.574,0.484,-0.411
+Converted honest agents,153.026,25.528,81.869,70.373,-71.157
+Active agents at T,8.286,6.002,73.785,83.705,65.499
+Active honest at T,0.0,0.0,72.781,84.553,72.781
+Active cheaters at T,8.286,6.002,1.004,1.919,-7.282
+Wealth of active agents,172.252,295.771,66177.608,76948.493,66005.356
+Wealth of evicted-label agents,0.0,0.0,2515.455,1618.968,2515.455
+Bankruptcy labels,191.714,6.002,52.601,49.688,-139.113
+Eviction labels,0.0,0.0,73.614,43.161,73.614
+Both labels,0.0,0.0,0.0,0.0,0.0
+All exits,191.714,6.002,126.215,83.705,-65.499
+Deaths,191.714,6.002,52.601,49.688,-139.113
+Trade deaths,191.714,6.002,52.601,49.688,-139.113
+Cost deaths,0.0,0.0,0.0,0.0,0.0
+Surviving agents,8.286,6.002,147.399,49.688,139.113
+Cumulative net benefit W_T,-3827.748,295.771,64693.063,75686.633,68520.811
+End-period total wealth,172.252,295.771,68693.063,75686.633,68520.811
+Resource-adjusted W_T,-3827.748,295.771,64693.063,75686.633,68520.811
